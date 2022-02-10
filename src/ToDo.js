@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ToDo = ({ todo }) => {
+const ToDo = ({ todo, handleToggle, handleFilter }) => {
     return (
-        <div>
+        <div className={todo.complete ? "strike" : ""}>
             {todo.task}
         </div>
     )
